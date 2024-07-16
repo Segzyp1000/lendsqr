@@ -1,0 +1,87 @@
+@import "./Variable.scss";
+
+
+.dashboard{
+    display: flex;
+
+    &-wrapper{
+        display: grid;
+        grid-template-columns: 2fr 8fr;
+    }
+
+
+}
+#side-nav{
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+    padding-left: 10px;
+
+}
+
+.users-data{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    @media only screen and (min-width: $medium-screen) and (max-width: $extra-large-screen) {
+        width: 100%;
+
+        }
+
+}
+.users-container{
+    margin: auto;
+    display: grid;
+    margin-top: 5px;
+    @media only screen and (min-width: $medium-screen) and (max-width: $extra-large-screen) {
+        width: 100%;
+
+        }
+
+}
+.table{
+    @include card-r();
+
+}
+
+.user-summary{
+    @include grid();
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin: 5px;
+    justify-content: space-between;
+
+}
+
+.card{
+    @include card-r();
+    padding: 10px;
+}
+
+th, td {
+    padding: 10px ;
+}
+
+th{
+
+    text-align: left;
+    font-size: 12px;
+
+  }
+
+  td {
+
+    text-align: left;
+    font-size: 14px;
+
+
+  }
+
+
+ .hr {
+    border-bottom: 2px solid black;
+
+  }
+
+  .status{
+    margin-right:10px ;
+  }

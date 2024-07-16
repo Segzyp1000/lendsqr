@@ -1,0 +1,36 @@
+@import "./Variable.scss";
+
+.pagination{
+    @media only screen and (max-width: $medium-screen) {
+        margin: auto;
+        justify-content: center;
+
+      }
+
+}
+
+.left{
+    color: $gray;
+    font-size: 20px;
+    @media only screen and (max-width: $medium-screen) {
+        font-size: 14px;
+        margin-top:10px;
+
+      }
+}
+.left .size {
+    background-color: #E5E8EE;
+    margin: auto 10px;
+    padding: 3px;
+    border-radius: 8px;
+    border: none;
+    color: $darkBlue;
+    font-size: 16px;
+    font-weight: 500;
+
+        @media only screen and (max-width: $medium-screen) {
+        font-size: 14px;
+        margin-top:10px;
+      }
+
+}
